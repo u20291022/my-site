@@ -1,6 +1,5 @@
 const infoText = [
-  "My name is Dmitriy",
-  "and my nickname is u20291022",
+  "My nickname is u20291022",
   "I'm 18 y.o. fullstack from Russia",
   "You can see my skills on my github page",
   "🌸 Be kind 🌸"
