@@ -11,6 +11,10 @@ const setTheme = (isDarkTheme) => {
   }
 }
 
+// onload
+const isOnloadThemeDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+setTheme(isOnloadThemeDark);
+
 // check device theme
 setInterval(() => {
   const isDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
