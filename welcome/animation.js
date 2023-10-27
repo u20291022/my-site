@@ -1,8 +1,8 @@
 const infoText = [
-  "My nickname is u20291022",
+  "My pseudo is u20291022",
   "I'm 18 y.o. fullstack from Russia",
   "You can see my skills on my github page",
-  "🌸 Be kind 🌸"
+  "That's all 🌙"
 ];
 
 const infoTextElement = document.getElementById("info-text");
