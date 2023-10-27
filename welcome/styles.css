@@ -1,0 +1,144 @@
+:root {
+  --main-color: black;
+  --accent-color: white;
+}
+
+::selection {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+.flex-v-center-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.default-colors {
+  color: var(--accent-color);
+  background-color: var(--main-color);
+}
+
+body {
+  margin: 0;
+
+  height: 100vh;
+
+  text-align: center;
+}
+
+#info-text {
+  font-size: 24px;
+
+  transition: 4s;
+}
+
+#skip-button {
+  position: absolute;
+
+  bottom: 5%;
+
+  padding: 5px;
+
+  text-align: center;
+
+  font-size: 18px;
+
+  border: 3px solid var(--accent-color);
+
+  transition: 1s;
+
+  cursor: pointer;
+}
+
+#skip-button:active {
+  border: 6px solid var(--main-color);
+}
+
+#skip-button:focus,
+#skip-button:hover {
+  outline: none !important;
+
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+main {
+  position: absolute;
+
+  visibility: hidden; /* change visibility after welcome animation */
+
+  opacity: 0; /* for transition */
+
+  transition: 2s;
+}
+
+.avatar {
+  max-width: 40%;
+
+  padding: 5px;
+
+  background: linear-gradient(45deg, #8888ff, lightblue);
+
+  box-shadow: 0px 0px 20px 10px #8888ff;
+
+  border-radius: 5%;
+}
+
+.links {
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 15px;
+}
+
+.links a {
+  margin: 5px;
+  padding: 10px;
+ 
+  text-decoration: underline;
+  text-decoration-color: var(--main-color);
+
+  color: var(--accent-color);
+
+  transition: 1s;
+
+  border: 0px solid var(--main-color);
+}
+
+.links a:hover {
+  text-decoration-color: var(--accent-color);
+}
+
+.links a:focus {
+  outline: none !important;
+  
+  border: 1px solid var(--accent-color);
+}
+
+.links p { /* brackets */
+  transition: 1s;
+}
+
+* {
+  letter-spacing: 2px;
+
+  text-transform: lowercase;
+  text-decoration: none;
+
+  font-size: 24px;
+  font-weight: 200;
+  font-family: Verdana, monospace;
+
+  transition: 2s;
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    font-size: 12px;
+  }
+}
