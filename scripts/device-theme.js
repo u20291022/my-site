@@ -1,5 +1,3 @@
-const changeCSSVariable = document.documentElement.style.setProperty;
-
 const setTheme = (isDarkTheme) => {
   if (isDarkTheme) {
     document.documentElement.style.setProperty("--main-color", "black");
